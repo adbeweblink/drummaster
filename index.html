@@ -25,5 +25,29 @@
 </head>
   <body>
     <div id="root"></div>
+
+  <script type="module">
+  import React from "react";
+  import { createRoot } from "react-dom/client";
+
+  function App() {
+    return (
+      <div className="min-h-screen flex items-center justify-center text-slate-100">
+        <div className="text-center space-y-4">
+          <h1 className="text-3xl font-bold">DrumMaster Pro V25</h1>
+          <p className="text-slate-300">
+            這裡之後放練習節奏、LV1~LV12 節奏列表、播放控制等等。
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  const container = document.getElementById("root");
+  const root = createRoot(container);
+  root.render(<App />);
+</script>
+
+  
   </body>
 </html>
